@@ -1,5 +1,5 @@
 
-/* @media (max-width: 1100px) {
+@media (max-width: 1100px) {
     .kaire {
         width: 800px;
         background-color: deepskyblue;
@@ -8,9 +8,9 @@
 }
 
 @media (max-width: 1000px) {
-    div {
+    .desine {
         width: 800 px;
         margin: 0 calc(50% - 400px);
         background-color: deepskyblue;
     }
-} */
+}
