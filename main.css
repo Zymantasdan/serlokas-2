@@ -1,17 +1,19 @@
 body{
     background-color: #cbd2df;
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-img{
-    width: 25%;
+.kaire{
+    /* display: inline-block; */
+    width: 300px;
     float: left;
     margin-left: 20%;
     margin-top: 100px;
     object-fit: contain;
 }
 
-div{
+.desine{
     display: inline-block;
     /* float: left; */
     width: 30%;
