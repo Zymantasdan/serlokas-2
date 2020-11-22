@@ -1,47 +1,51 @@
-body{
-    background-color: #cbd2df;
-    width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    display: grid;
+    grid-template-columns: 1fr 300px 60px 300px 1fr;
+    grid-template-areas: 
+        ". paveiksliukas . tekstas .";
+    background-color: #ebecee;
 }
+    img {
+        grid-area: paveiksliukas;
+        display: inline-block;
+        width: 100%;
+        margin: 10px;
+    }
+    div {
+        grid-area: tekstas;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+        h1 {
+            display: inline-block;
+            width: 100%;
+            font-size: 120px;
+            margin: 10px;
+            color: #7f828f;
+        }
+        p {
+            display: inline-block;
+            width: 100%;
+            font-size: 30px;
+            color: #7f828f;
+        }
+        a {
+            display: inline-block;
+            color: #fff;
+            background-color: #7f828f;
+            padding: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
 
-.kaire{
-    /* display: inline-block; */
-    width: 300px;
-    float: left;
-    margin-left: 20%;
-    margin-top: 100px;
-    object-fit: contain;
-}
 
-.desine{
-    display: inline-block;
-    /* float: left; */
-    width: 30%;
-    text-align: center;
-    margin: 0;
-    margin-top: 100px;
-    margin-left: 10%;
-}
-
-h1{
-    display: inline-block;
-    font-size: 70px;
-    width: 50%;
-    color: rgb(42, 48, 78);
-}
-
-p{
-    display: inline-block;
-    font-size: 30px;
-    width: 100%;
-    color: rgb(143, 140, 140);
-}
-
-a{
-    display: inline-block;
-    background-color: rgb(143, 140, 140);
-    color: #ffffff;
-    padding: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
+@media (max-width: 900px) {
+    body {
+        grid-template-columns: 50px 1fr 50px;
+        grid-template-areas: 
+            ". tekstas ."
+            ". paveiksliukas .";
+    }
 }
