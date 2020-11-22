@@ -39,8 +39,6 @@ body {
             text-transform: uppercase;
             text-decoration: none;
         }
-
-
 @media (max-width: 900px) {
     body {
         grid-template-columns: 50px 1fr 50px;
